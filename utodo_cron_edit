@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# These are hardcoded into utodo.py for the sake of this project.
+
+JSON_FILE="/home/lantidw/CS2351_Project/data/settings.json"
+SCRIPT="/usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py"
+LOGFILE="/home/lantidw/CS2351_Project/utodo.log"
+
+# --------------------------
+
+log() {
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - BASH - $1" >> "$LOGFILE"
+}
+
+log "----- utodo_cron_edit started -----"
+
+# Extract time from JSON (format "HH:MM")
+TIME=$(jq -r '.Time' "$JSON_FILE")
+log "Read time from JSON: $TIME"
+
+# Split into hour/minute
+HOUR="${TIME%%:*}"
+MINUTE="${TIME##*:}"
+
+# Create the new cron entry
+NEW_CRON="$MINUTE $HOUR * * * $SCRIPT"
+
+log "Generated cron entry: $NEW_CRON"
+
+# Get current crontab WITHOUT any old entry of this script
+CURRENT_CRON=$(crontab -l 2>/dev/null | grep -v "$SCRIPT")
+
+# Install updated crontab
+(
+    echo "$CURRENT_CRON"
+    echo "$NEW_CRON"
+) | crontab -
+
+log "Cron job updated successfully."
+log "----- utodo_cron_edit finished -----"

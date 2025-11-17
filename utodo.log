@@ -1,0 +1,72 @@
+2025-11-14 11:40:26,278 - INFO - Script output:
+2025-11-14 11:40:26,278 - INFO - Generated cron entry: 30 02 * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
+
+2025-11-14 11:54:50 - BASH - ----- utodo_cron_edit started -----
+2025-11-14 11:54:50 - BASH - Read time from JSON: 
+2025-11-14 11:54:50 - BASH - Generated cron entry:   * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
+2025-11-14 11:54:50 - BASH - Cron job updated successfully.
+2025-11-14 11:54:50 - BASH - ----- utodo_cron_edit finished -----
+2025-11-14 11:54:50,235 - INFO - Script output:
+2025-11-14 11:54:50,235 - INFO - 
+2025-11-14 11:54:50,235 - ERROR - Script errors:
+2025-11-14 11:54:50,235 - ERROR - jq: error: Could not open file /home/lantidw/CS2351_Project/config.json: No such file or directory
+"-":23: bad month
+errors in crontab file, can't install.
+
+2025-11-14 11:56:21 - BASH - ----- utodo_cron_edit started -----
+2025-11-14 11:56:21 - BASH - Read time from JSON: 19:30
+2025-11-14 11:56:21 - BASH - Generated cron entry: 30 19 * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
+2025-11-14 11:56:21 - BASH - Cron job updated successfully.
+2025-11-14 11:56:21 - BASH - ----- utodo_cron_edit finished -----
+2025-11-14 11:56:21,063 - INFO - Script output:
+2025-11-14 11:56:21,063 - INFO - 
+2025-11-14 17:22:47 - BASH - ----- utodo_cron_edit started -----
+2025-11-14 17:22:47 - BASH - Read time from JSON: 17:04
+2025-11-14 17:22:47 - BASH - Generated cron entry: 04 17 * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
+2025-11-14 17:22:47 - BASH - Cron job updated successfully.
+2025-11-14 17:22:47 - BASH - ----- utodo_cron_edit finished -----
+2025-11-14 17:22:57 - BASH - ----- utodo_cron_edit started -----
+2025-11-14 17:22:57 - BASH - Read time from JSON: 17:24
+2025-11-14 17:22:57 - BASH - Generated cron entry: 24 17 * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
+2025-11-14 17:22:57 - BASH - Cron job updated successfully.
+2025-11-14 17:22:57 - BASH - ----- utodo_cron_edit finished -----
+2025-11-14 17:29:17 - BASH - ----- utodo_cron_edit started -----
+2025-11-14 17:29:17 - BASH - Read time from JSON: 17:30
+2025-11-14 17:29:17 - BASH - Generated cron entry: 30 17 * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
+2025-11-14 17:29:17 - BASH - Cron job updated successfully.
+2025-11-14 17:29:17 - BASH - ----- utodo_cron_edit finished -----
+2025-11-14 17:37:35 - BASH - ----- utodo_cron_edit started -----
+2025-11-14 17:37:35 - BASH - Read time from JSON: 17:38
+2025-11-14 17:37:35 - BASH - Generated cron entry: 38 17 * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
+2025-11-14 17:37:35 - BASH - Cron job updated successfully.
+2025-11-14 17:37:35 - BASH - ----- utodo_cron_edit finished -----
+2025-11-14 17:42:40 - BASH - ----- utodo_cron_edit started -----
+2025-11-14 17:42:40 - BASH - Read time from JSON: 17:43
+2025-11-14 17:42:40 - BASH - Generated cron entry: 43 17 * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
+2025-11-14 17:42:40 - BASH - Cron job updated successfully.
+2025-11-14 17:42:40 - BASH - ----- utodo_cron_edit finished -----
+2025-11-14 17:47:13 - BASH - ----- utodo_cron_edit started -----
+2025-11-14 17:47:13 - BASH - Read time from JSON: 17:48
+2025-11-14 17:47:13 - BASH - Generated cron entry: 48 17 * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
+2025-11-14 17:47:13 - BASH - Cron job updated successfully.
+2025-11-14 17:47:13 - BASH - ----- utodo_cron_edit finished -----
+2025-11-14 17:52:15 - BASH - ----- utodo_cron_edit started -----
+2025-11-14 17:52:15 - BASH - Read time from JSON: 17:53
+2025-11-14 17:52:15 - BASH - Generated cron entry: 53 17 * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
+2025-11-14 17:52:15 - BASH - Cron job updated successfully.
+2025-11-14 17:52:15 - BASH - ----- utodo_cron_edit finished -----
+2025-11-14 20:23:27 - BASH - ----- utodo_cron_edit started -----
+2025-11-14 20:23:27 - BASH - Read time from JSON: 20:24
+2025-11-14 20:23:27 - BASH - Generated cron entry: 24 20 * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
+2025-11-14 20:23:28 - BASH - Cron job updated successfully.
+2025-11-14 20:23:28 - BASH - ----- utodo_cron_edit finished -----
+2025-11-14 20:26:13 - BASH - ----- utodo_cron_edit started -----
+2025-11-14 20:26:13 - BASH - Read time from JSON: 00:00
+2025-11-14 20:26:13 - BASH - Generated cron entry: 00 00 * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
+2025-11-14 20:26:13 - BASH - Cron job updated successfully.
+2025-11-14 20:26:13 - BASH - ----- utodo_cron_edit finished -----
+2025-11-14 20:30:44 - BASH - ----- utodo_cron_edit started -----
+2025-11-14 20:30:44 - BASH - Read time from JSON: 20:31
+2025-11-14 20:30:44 - BASH - Generated cron entry: 31 20 * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
+2025-11-14 20:30:44 - BASH - Cron job updated successfully.
+2025-11-14 20:30:44 - BASH - ----- utodo_cron_edit finished -----
