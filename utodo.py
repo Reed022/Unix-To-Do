@@ -99,7 +99,8 @@ def display_lists():
 
 	display_nav_footer(True)
 
-# displays tasks for to-do list passed in as arg list_num
+# displays tasks for to-do list
+# Args: list_name string with whitespace, ie. "Sample List"
 def display_tasks(list_name):
 
 	if get_num_tasks(list_name) == 0:
@@ -125,6 +126,7 @@ def display_tasks(list_name):
 	display_nav_footer(True)
 
 # displays a specific task's details within a to-do list
+# Args: list_name string with whitespace, ie. "Sample List"; task_num integer matching task pos in memory
 def display_task(list_name, task_num):
 	# get the tasks for that list, get task data and split into strings
 	tasks = get_tasks(list_name)
@@ -162,6 +164,7 @@ def get_valid_time():
 			print("Invalid format! Please enter a time in format HH:MM")
 
 # writes the file for a new to-do list
+# Args: list_name string with whitespace, ie. "Sample List"
 def create_new_list(list_name):
 
 	# make the file path
@@ -173,6 +176,7 @@ def create_new_list(list_name):
 	return file_path
 
 # deletes the file for a to-do list
+# Args: list_name string with whitespace, ie. "Sample List"
 def delete_list(list_name):
 
 	# make the file path
@@ -189,6 +193,7 @@ def delete_list(list_name):
 		return False
 
 # prompts information for a new task and stores in the appropriate to-do list file
+# Args: list_name string with whitespace, ie. "Sample List"
 def create_new_task(list_name):
 
 
@@ -197,7 +202,6 @@ def create_new_task(list_name):
 	print("When would you like this task to be due?")
 	print("|  Date format:   MM/DD/YYYY")
 	print("|  Example:   11/02/2025   ---   \"November 2, 2025\"")
-	print("If you would like to skip this step, type 'S'")
 	date = get_valid_date() # take input for a date and validate it
 	print(f"Due date set to {date}")
 	print("Give your new task a short description:")
@@ -231,6 +235,7 @@ def create_new_task(list_name):
 		print("Task saved! Returning to list menu.")
 
 # overwrites appropriate to-do list file without the specified task
+# Args: list_name string with whitespace, ie. "Sample List"; task_num integer matching task pos in memory
 def delete_task(list_name, task_num):
 
 	tasks = get_tasks(list_name)
@@ -253,6 +258,7 @@ def delete_task(list_name, task_num):
 	print("Task removed!")
 
 # overwrites the file with new information for a given task
+# Args: list_name string with whitespace, ie. "Sample List"; task_num integer matching task pos in memory
 def edit_task(list_name, task_num):
 
 	# store current task data... will be written over in editing
@@ -323,6 +329,7 @@ def edit_task(list_name, task_num):
 	print("Task saved! Returning to list menu.")
 
 # display a task and prompt user to complete task, edit task, or return
+# Args: list_name string with whitespace, ie. "Sample List"; task_num integer matching task pos in memory
 def view_task(list_name, task_num):
 
 	# eventually input data for task... for now placeholder data
@@ -355,6 +362,7 @@ def view_task(list_name, task_num):
 			case _:
 				print("Invalid option.")
 
+# Attempts to run bash file utodo_cron_edit to automatically edit crontab
 def call_cron_edit():
 	try:
     		result = subprocess.run(['/bin/bash', 'utodo_cron_edit'], capture_output=True, text=True, check=True)
@@ -369,8 +377,9 @@ def call_cron_edit():
 running = True
 current_menu = "main" # by default, main menu
 
+# check if program has never run or data folder somehow doesn't exist... first time setup
 if not os.path.exists("data"):
-	# means program has never been run... make necessary files
+
 	print("Program startup:")
 
 	os.makedirs("data") # make data directory

@@ -1,3 +1,5 @@
-Utilities|2025-11-14|$257, split with roommates
-Insurance|2025-11-16|$100, health and car
 Phone|2025-12-01|Phone payment due, $19
+December rent|2025-12-01|$459
+Phone payment|2025-12-16|$32 (12 months left)
+Credit card|2025-12-14|Statement comes 11/20/2025
+Check credit card statement|2025-11-19|

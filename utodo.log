@@ -70,3 +70,23 @@ errors in crontab file, can't install.
 2025-11-14 20:30:44 - BASH - Generated cron entry: 31 20 * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
 2025-11-14 20:30:44 - BASH - Cron job updated successfully.
 2025-11-14 20:30:44 - BASH - ----- utodo_cron_edit finished -----
+2025-11-17 19:44:51 - BASH - ----- utodo_cron_edit started -----
+2025-11-17 19:44:51 - BASH - Read time from JSON: 00:00
+2025-11-17 19:44:51 - BASH - Generated cron entry: 00 00 * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
+2025-11-17 19:44:51 - BASH - Cron job updated successfully.
+2025-11-17 19:44:51 - BASH - ----- utodo_cron_edit finished -----
+2025-11-17 19:45:14 - BASH - ----- utodo_cron_edit started -----
+2025-11-17 19:45:14 - BASH - Read time from JSON: 19:46
+2025-11-17 19:45:14 - BASH - Generated cron entry: 46 19 * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
+2025-11-17 19:45:14 - BASH - Cron job updated successfully.
+2025-11-17 19:45:14 - BASH - ----- utodo_cron_edit finished -----
+2025-11-17 19:52:17 - BASH - ----- utodo_cron_edit started -----
+2025-11-17 19:52:17 - BASH - Read time from JSON: 00:00
+2025-11-17 19:52:17 - BASH - Generated cron entry: 00 00 * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
+2025-11-17 19:52:17 - BASH - Cron job updated successfully.
+2025-11-17 19:52:17 - BASH - ----- utodo_cron_edit finished -----
+2025-11-18 10:45:50 - BASH - ----- utodo_cron_edit started -----
+2025-11-18 10:45:50 - BASH - Read time from JSON: 00:00
+2025-11-18 10:45:50 - BASH - Generated cron entry: 00 00 * * * /usr/bin/python3 /home/lantidw/CS2351_Project/utodo_notifications.py
+2025-11-18 10:45:50 - BASH - Cron job updated successfully.
+2025-11-18 10:45:50 - BASH - ----- utodo_cron_edit finished -----
